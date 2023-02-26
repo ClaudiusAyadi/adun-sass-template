@@ -1,0 +1,19 @@
+{
+  "name": "sass-project-template",
+  "version": "1.0.0",
+  "description": "Template for a Sass project with a default folder and file structure",
+  "scripts": {
+    "watch": "nodemon -w scss -e scss -x \"sh ./bin/scss-build.sh\""
+  },
+  "author": "Claudius A.",
+  "license": "GPL-3.0",
+  "homepage": "https://twitter.com/ClaudiusAyadi",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.58.3"
+  }
+}

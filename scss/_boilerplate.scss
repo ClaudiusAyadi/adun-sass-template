@@ -1,0 +1,50 @@
+//Color Palette
+@mixin generate-color-variants($color, $property-name) {
+  --#{$property-name}-l-5: #{lighten($color, 5)};
+  --#{$property-name}-l-10: #{lighten($color, 10)};
+  --#{$property-name}-l-20: #{lighten($color, 20)};
+  --#{$property-name}-d-10: #{darken($color, 10)};
+  --#{$property-name}-d-20: #{darken($color, 20)};
+  --#{$property-name}-d-30: #{darken($color, 30)};
+}
+
+:root {
+  --main: #89cff0;
+  --accent: #ff6961;
+  --hover: #ff696190;
+  --text: #333333;
+  @include generate-color-variants(#89cff0, m);
+
+  // Color pallete Output
+  // --m-l-5: #a0d8f3;
+  // --m-l-10: #b6e1f6;
+  // --m-l-20: #e3f4fc;
+  // --m-d-10: #5cbdea;
+  // --m-d-20: #2faae4;
+  // --m-d-30: #198fc7;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a:link,
+a:visited {
+  display: flex;
+  text-decoration: none;
+}
