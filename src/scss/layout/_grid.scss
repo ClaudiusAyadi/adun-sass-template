@@ -1,0 +1,33 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column !important;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.g-2 {
+  gap: 2rem;
+}

@@ -5,10 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SASS Project</title>
-    <link rel="stylesheet" href="scss/theme.scss" />
+    <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <h1 class="m-d-30">Hello World!</h1>
-    <!-- end of m-d-30 -->
+    <div class="container pt-2">
+      <header class="flex flex-col">
+        <div class="header-nav">
+          <nav class="flex g-2">
+            <a href="#" class="nav-link">New</a>
+            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">Discover</a
+            ><!-- end of nav-link -->
+          </nav>
+          <!-- end of flex -->
+
+          <div class="logo">Nostalgia Couture</div>
+          <!-- end of logo -->
+
+          <nav class="flex g-2">
+            <a href="#" class="nav-link"
+              ><svg class="nav-link__icon">
+                <use xlink:href="../assets/images/sprite.svg#search"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="nav-link">Account</a>
+
+            <a href="#" class="nav-link"
+              ><svg class="nav-link__icon">
+                <use xlink:href="../assets/images/sprite.svg#bag"></use>
+              </svg>
+            </a>
+          </nav>
+          <!-- end of flex -->
+        </div>
+        <!-- end of header-nav -->
+
+        <div class="header-hero">
+          image
+        </div><!-- end of header-hero -->
+      </header>
+      <!-- end of flex -->
+    </div>
+    <!-- end of container -->
   </body>
 </html>

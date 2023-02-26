@@ -1,0 +1,21 @@
+//Color Palette
+@mixin color-palette($color, $property, $percent-range) {
+  @each $percent in $percent-range {
+    $light-value: lighten($color, $percent);
+    $dark-value: darken($color, $percent);
+    
+    --#{$property}-l-#{$percent}: #{$light-value};
+    --#{$property}-d-#{$percent}: #{$dark-value};
+  }
+}
+
+
+
+
+
+@mixin hocus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}

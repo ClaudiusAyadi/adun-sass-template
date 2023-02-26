@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+
+  @include hocus {
+    text-decoration: underline;
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

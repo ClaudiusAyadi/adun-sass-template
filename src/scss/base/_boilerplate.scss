@@ -1,0 +1,47 @@
+@use "../abstracts/" as *;
+
+:root {
+  --main: #89cff0;
+  --accent: #ff6961;
+  --hover: #ff696190;
+  --text: #333333;
+
+  --max-width: 144rem;
+
+  @include color-palette(#89cff0, m, 5);
+  @include color-palette(#89cff0, m, 10);
+  @include color-palette(#89cff0, m, 20);
+
+  // Color pallete Variables
+  // --m-l-5
+  // --m-l-10
+  // --m-l-20
+  // --m-d-5:
+  // --m-d-10
+  // --m-d-20
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: var(--m-l-20);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
